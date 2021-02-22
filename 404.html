@@ -1,89 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Page Not Found</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-      text-align: center;
-    }
-    .box {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
-    .number {
-      font-size: 80px;
-      color: #666;
-      font-weight: bold;
-    }
-    .text {
-      font-size: 14px;
-      margin: 24px;
-      color: #333;
-    }
-    .btn-container {
-      display: flex;
-      justify-content: center;
-    }
-    .btn {
-      padding: 8px 24px;
-      display: inline-block;
-      text-decoration: none;
-      background: #fff;
-      border: 2px solid #efefef;
-      color: #333;
-      margin: 24px;
-      border-radius: 20px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-    }
-    .footer {
-      padding: 16px;
-      border-top: 1px solid #efefef;
-      color: #777;
-      font-weight: lighter;
-    }
-    .footer a {
-      text-decoration: none;
-      font-weight: bold;
-      color: #000;
-    }
-  </style>
-</head>
-<body>
-  <div class="box">
-    <div class="number">4 0 4</div>
-    <div class="text">
-      Page not found
-    </div>
-    <div class="btn-container">
-      <a class="btn" id="back">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" style="margin-right: 8px;">
-          <path fill="none" d="M0 0h24v24H0z"/>
-          <path d="M5.828 7l2.536 2.536L6.95 10.95 2 6l4.95-4.95 1.414 1.414L5.828 5H13a8 8 0 1 1 0 16H4v-2h9a6 6 0 1 0 0-12H5.828z"/>
-        </svg>
-        Back
-      </a>
-    </div>
-  </div>
-  <footer class="footer">
-    Powered by <a href="https://gridea.dev" target="_blank">Gridea</a>
-  </footer>
-  <script>
-    var back = document.getElementById('back')
-    back.onclick = function() { console.log('run...'); history.back() }
-  </script>
-</body>
+<html>
+    <head>
+        <title>Gmt-42!</title>
+        <meta charset="UTF-8">
+        <Style Type="text/css">
+        
+            body {min-width: 500px;}
+
+            .h_container {
+                width: auto;
+                max-width: 502px;
+                min-width: 330px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                background-color: #fff;
+            }
+    
+            .wr {
+                font-size: 40px;
+                line-height: 1.1;
+                font-weight: 600;
+                color: #000;
+                letter-spacing: 0em;
+                font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+                text-align: center;
+                z-index: 1;
+            }
+    
+            @media screen and (prefers-color-scheme: dark){
+    
+            .h_container {background-color: #121212;}
+            body {background-color: #121212;}
+            .wr{color: #9e9e9e;}
+            }
+    
+    @keyframes opc {
+       0% {opacity: 0;}
+       35% {opacity: 0;}
+       45% {opacity: 1;}
+       60% {opacity: 1;}
+       70% {opacity: 1;}
+       80% {opacity: 0;}
+       100% {opacity: 0;}
+       }
+       
+    @-webkit-keyframes opc {
+       0% {opacity: 0;}
+       35% {opacity: 0;}
+       45% {opacity: 1;}
+       60% {opacity: 1;}
+       70% {opacity: 1;}
+       80% {opacity: 0;}
+       100% {opacity: 0;}
+       }
+    
+    @keyframes opc2 {
+       0% {opacity: 1;}
+       20% {opacity: 1;}
+       30% {opacity: 0;}
+       50% {opacity: 0;}
+       85% {opacity: 0;}
+       100% {opacity: 1;}
+       }
+       
+    @-webkit-keyframes opc2 {
+       0% {opacity: 1;}
+       20% {opacity: 1;}
+       30% {opacity: 0;}
+       50% {opacity: 0;}
+       85% {opacity: 0;}
+       100% {opacity: 1;}
+       } 
+    
+    .opc{
+       opacity: 0;
+       animation: opc 10s linear infinite;
+       -webkit-animation: opc 10s linear infinite;
+       }
+       
+    .opc2{
+       opacity: 1;
+       animation: opc2 10s linear infinite;
+       -webkit-animation: opc2 10s linear infinite;
+       }
+            
+            </Style>
+    </head>
+    <body>
+
+        <div class="h_container opc2"><h1 class="wr">Leider wurde die gewünschte Seite nicht gefunden.</h1></div>
+
+        <div class="h_container opc"><h1 class="wr">The page you’re looking for can not be found.</h1></div>
+
+    </body>
 </html>
