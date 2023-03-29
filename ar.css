@@ -18,6 +18,16 @@ p {
 
 }
 
+a{
+   font-size: 1.125em;
+   line-height: 1.7em;
+   font-weight: 400;
+   letter-spacing: -0.022em;
+   color: var(--c-title);
+   font-style: normal;
+   text-decoration: underline;
+}
+
 .st0 {
    opacity: 0.8;
    fill: #FFFFFF;
@@ -103,6 +113,21 @@ p {
 .text-center {
    text-align: center;
 }   
+
+.rss {
+   color: #000000;
+   opacity: 40%;
+   text-decoration: none;
+}
+
+.site-footer {
+   text-align: center;
+   font-size: 12px;
+   padding: 32px 16px;
+ }
+ .site-footer .slogan {
+   margin-bottom: 24px;
+ }
 
 .image-model {
    margin: 0 auto;
@@ -224,7 +249,26 @@ p {
    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
+:root {
+   --c-base-black: #0C1E29;
+   --c-title: #0C1E29;
+   --c-base-blacklight: #4E616C;
+   --c-base-purple: #5978F3;
+   --c-base-purplelight: #C2CCF2;
+   --c-base-bluelight: hwb(199, 1%, 4%);
+   --c-base-blue: hwb(209, 0%, 35%);
+   --c-base-green: hwb(123, 40%, 27%);
+   --c-base-graylight: hwb(0, 80%, 20%);
+   --c-base-gray: hwb(0, 60%, 40%);
+   --c-base-orange: hwb(22, 21%, 5%);
+   --c-base-red: hwb(5, 24%, 9%);
+   --c-base-white: hwb(0, 95%, 5%);
+   --c-base-yellow: hwb(48, 6%, 5%);
+ }
+
 @media screen and (prefers-color-scheme: dark){
+
+   :root {--c-title: #ffffff;}
 
    body {background-color: #000000;}
 
@@ -241,5 +285,11 @@ p {
    #topbar {background: #000000fa;}
 
    #topbar h1 {color: #fffffffa;}
+
+   .rss {color: #ffffff;}
+
+   .augst1{fill:#ffffff;}
+
+   .reast1{fill:#ffffff;}
 
 }
