@@ -114,10 +114,15 @@ a{
    text-align: center;
 }   
 
-.rss {
+.hanger {
    color: #000000;
    opacity: 40%;
    text-decoration: none;
+   border: black;
+   border-width: 1px;
+   border-style: solid;
+   padding: 0px 5px;
+   border-radius: 20px;
 }
 
 .site-footer {
