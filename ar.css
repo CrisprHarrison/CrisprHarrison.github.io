@@ -1,7 +1,7 @@
 body {
    text-align: center;
    font-size: 16px;
-   background-color: #ffffff;
+   background-color: #fafafa;
    min-width: 320px;
    margin: 0px;
    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -21,11 +21,10 @@ p {
 a{
    font-size: 1.125em;
    line-height: 1.7em;
-   font-weight: 400;
    letter-spacing: -0.022em;
    color: var(--c-title);
    font-style: normal;
-   text-decoration: underline;
+   text-decoration: none;
 }
 
 .st0 {
@@ -97,7 +96,7 @@ a{
    box-sizing: border-box;
    position: relative;
    z-index: 1;
-   margin: 2em 0 4em 0;
+   margin: 2em 0 2em 0;
    min-height: 2px;
    font-size: 17px;
    line-height: 1.47059;
@@ -170,6 +169,8 @@ a{
 
    p {line-height: 1.5em;}
 
+   .card2{text-align: left;}
+
 }
 
 @media screen and (max-width: 374px){
@@ -235,7 +236,7 @@ a{
    width: 100%;
    top: 0;
    z-index: 10;
-   background: #fffffffa;
+   background: #fafafafa;
    padding: 25px 0px 15px;
    height: 24px;
    min-width: 320px;
@@ -252,6 +253,21 @@ a{
    text-overflow: ellipsis;
    overflow: hidden;
    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.intro{
+   cursor: pointer;
+   font-size: 16px;
+   font-weight: 600 !important;
+   text-decoration: none !important;
+}
+
+.caption{
+   font-size: 12px;
+   color: #9b9b9b;
+   font-weight: 600 !important;
+   line-height: 1.33337;
+   text-decoration: none !important;
 }
 
 :root {
